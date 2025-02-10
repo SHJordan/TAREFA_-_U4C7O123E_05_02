@@ -1,0 +1,69 @@
+{
+    "version": 1,
+    "author": "Jordan Humberto de Souza",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "type": "board-pi-pico-w",
+            "id": "pico",
+            "top": 0,
+            "left": 0,
+            "attrs": {
+                "builder": "pico-sdk"
+            }
+        },
+        {
+            "type": "wokwi-servo",
+            "id": "servo1",
+            "top": -40.4,
+            "left": 182.4,
+            "attrs": {}
+        }
+    ],
+    "connections": [
+        [
+            "pico:GP0",
+            "$serialMonitor:RX",
+            "",
+            []
+        ],
+        [
+            "pico:GP1",
+            "$serialMonitor:TX",
+            "",
+            []
+        ],
+        [
+            "servo1:GND",
+            "pico:GND.8",
+            "black",
+            [
+                "v-9.6",
+                "h-96",
+                "v32.05"
+            ]
+        ],
+        [
+            "servo1:V+",
+            "pico:3V3",
+            "red",
+            [
+                "v0.1",
+                "h-86.4",
+                "v32.05"
+            ]
+        ],
+        [
+            "servo1:PWM",
+            "pico:GP22",
+            "blue",
+            [
+                "h-9.6",
+                "v29",
+                "h-48",
+                "v60.85"
+            ]
+        ]
+    ],
+    "dependencies": {}
+}
