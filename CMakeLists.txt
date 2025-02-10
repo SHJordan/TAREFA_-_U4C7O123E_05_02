@@ -55,8 +55,8 @@ target_include_directories(TAREFA_-_U4C7O123E_05_02 PRIVATE
 
 # Add any user requested libraries
 target_link_libraries(TAREFA_-_U4C7O123E_05_02 
-        
-        )
+        hardware_pwm
+)
 
 pico_add_extra_outputs(TAREFA_-_U4C7O123E_05_02)
 
