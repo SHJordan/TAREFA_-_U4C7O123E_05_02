@@ -18,6 +18,25 @@
             "top": -40.4,
             "left": 182.4,
             "attrs": {}
+        },
+        {
+            "type": "wokwi-led",
+            "id": "led1",
+            "top": 95.2,
+            "left": -142.6,
+            "rotate": 270,
+            "attrs": {
+                "color": "red"
+            }
+        },
+        {
+            "type": "wokwi-resistor",
+            "id": "r1",
+            "top": 109.55,
+            "left": -86.4,
+            "attrs": {
+                "value": "330"
+            }
         }
     ],
     "connections": [
@@ -36,7 +55,7 @@
         [
             "servo1:GND",
             "pico:GND.8",
-            "black",
+            "#8f4814",
             [
                 "v-9.6",
                 "h-96",
@@ -56,12 +75,39 @@
         [
             "servo1:PWM",
             "pico:GP22",
-            "blue",
+            "orange",
             [
                 "h-9.6",
                 "v29",
                 "h-48",
                 "v60.85"
+            ]
+        ],
+        [
+            "led1:C",
+            "pico:GND.4",
+            "black",
+            [
+                "h76.8",
+                "v47.6",
+                "h34.85"
+            ]
+        ],
+        [
+            "led1:A",
+            "r1:1",
+            "red",
+            [
+                "h0"
+            ]
+        ],
+        [
+            "r1:2",
+            "pico:GP12",
+            "red",
+            [
+                "h18",
+                "v51.21"
             ]
         ]
     ],
