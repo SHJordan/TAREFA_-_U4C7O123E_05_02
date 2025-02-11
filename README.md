@@ -1,5 +1,9 @@
 # Controle de Servomotor por PWM com Raspberry Pi Pico W
 
+
+https://github.com/user-attachments/assets/9969eb87-6c70-4a54-aa09-7a7d82452112
+
+
 Este projeto demonstra o controle de um servomotor por PWM utilizando o microcontrolador RP2040 (Raspberry Pi Pico W) com o Pico SDK v2.1.0. A simulação foi realizada no ambiente online ([Wokwi](https://wokwi.com/projects/422461241937890305)), utilizando também um LED RGB (GPIO 12) para evidenciar a aplicação de PWM em modulação de brilho.
 
 ## Funcionalidades
@@ -22,4 +26,4 @@ Este projeto demonstra o controle de um servomotor por PWM utilizando o microcon
 
 1. **Clone o Repositório:**
    ```bash
-   git clone <URL-do-repositório>
+   git clone https://github.com/SHJordan/TAREFA_-_U4C7O123E_05_02
